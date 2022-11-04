@@ -1,14 +1,24 @@
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let array = [2, true, false, 5 < 4, 555, 'jdjdjd', 535353, 12.3, 'ddfdf', 6 > 2];
+let array = [];
+array[0]='blabla'
 console.log(array[0]);
+array[1]='lolka'
 console.log(array[1]);
+array[2]=2121
 console.log(array[2]);
+array[3]='12'
 console.log(array[3]);
+array[4]=5>3
 console.log(array[4]);
+array[5]=6<2
 console.log(array[5]);
+array[6]='blablvnvnvnvnva'
 console.log(array[6]);
+array[7]=11111
 console.log(array[7]);
+array[8]=1.1
 console.log(array[8]);
+array[9]='Kiev'
 console.log(array[9]);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
