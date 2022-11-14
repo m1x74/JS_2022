@@ -283,13 +283,9 @@
     document.write(`<div class="users-box">`)
     for (const user of usersList) {
       document.write(`<div class="user-block">`)
-        document.write(`<h2>${user.id} - ${user.name} - ${user.username}</h2>`)
-        document.write(`<h3>${user.email} - ${user.phone}</h3>`)
+        document.write(`<h2>${user.id} - ${user.name} - ${user.username}</h2><h3>${user.email} - ${user.phone}</h3>`)
         document.write(`<div class="address-block">`)
-        document.write(`<p>City - ${user.address.city}</p>`)
-        document.write(`<p>Street - ${user.address.street}</p>`)
-        document.write(`<p>Suite - ${user.address.suite}</p>`)
-        document.write(`<p>Zip code - ${user.address.zipcode}</p>`)
+        document.write(`<p>City - ${user.address.city}</p>Street - ${user.address.street}</p>Suite - ${user.address.suite}</p>Zip code - ${user.address.zipcode}</p>`)
         document.write(`</div>`)
 
 
