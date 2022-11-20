@@ -96,22 +96,22 @@
 //   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
 //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
-let arr = [9,8,0,4];
-let chI =2;
-let f=(array, numI)=>{
-    for (let i = 0; i < array.length; i++) {
-        if (i===numI){
-            let b = array[i];
-            array[i]=array[i+1];
-            array[i+1]=b;
-        }
-    }
-
-
-
-return array
-}
-console.log(f(arr, chI));
+// let arr = [9,8,0,4];
+// let chI =2;
+// let f=(array, numI)=>{
+//     for (let i = 0; i < array.length; i++) {
+//         if (i===numI){
+//             let b = array[i];
+//             array[i]=array[i+1];
+//             array[i+1]=b;
+//         }
+//     }
+//
+//
+//
+// return array
+// }
+// console.log(f(arr, chI));
 //
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
@@ -119,3 +119,19 @@ console.log(f(arr, chI));
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+// let array=[0,0,1,0]
+// let f=(arr)=>{
+//     let gg = array.length;
+//     for (let i = 0; i < gg; i++) {
+//         if (arr[i]===0){
+//             arr.push(0);
+//             arr.splice(i,1);
+//             gg--;
+//             i--;
+//
+//
+//         }
+//     }
+//     return arr
+// }
+// console.log(f(array))
