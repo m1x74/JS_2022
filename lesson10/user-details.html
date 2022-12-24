@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let url = new URL(location.href);
+    let id = url.searchParams.get('id');
+    fetch(`http://jsonplaceholder.typicode.com/users/${id}`)
+        .then((response)=>response.json())
+        .then((user)=>{
+            let mainDiv = document.createElement('div');
+            let titleDiv = document.createElement('div');
+            function recursion(element){
+                for (const value in element) {
+                    if (typeof element[value]!=='object'){
+                        let p =document.createElement('p');
+                        p.append(`${value}:${element[value]}`)
+                        mainDiv.append(p)
+                    }else {
+                        recursion(element[value])
+                    }
+                }
+            }
+            recursion(user)
+
+
+            document.body.append(mainDiv, titleDiv)
+
+        })
+
+
+
+</script>
+</body>
+</html>
